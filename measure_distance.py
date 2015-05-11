@@ -1,3 +1,5 @@
+
+    # get the points
     fidNode1=slicer.mrmlScene.GetNodesByName('targets-REG').GetItemAsObject(0)
     fidNode2=slicer.mrmlScene.GetNodesByName('needle Tip').GetItemAsObject(0)
 
@@ -9,8 +11,6 @@
 
     target_position=[target_position[0],target_position[1],target_position[2],1]
     needleTip_position=[needleTip_position[0],needleTip_position[1],needleTip_position[2],1]
-
-    print
 
     # change fiducial points from RAS to IJK
     RAStoIJK=vtk.vtkMatrix4x4()
